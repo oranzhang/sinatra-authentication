@@ -6,8 +6,8 @@ begin
   require 'jeweler'
   
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name           = 'sinatra-authentication'
-    gemspec.version        = '0.4.1'
+    gemspec.name           = 'sinatra-authentication-oran'
+    gemspec.version        = '0.0.1'
     gemspec.description    = "Simple authentication plugin for sinatra."
     gemspec.summary        = "Simple authentication plugin for sinatra."
     gemspec.homepage       = "http://github.com/maxjustus/sinatra-authentication"

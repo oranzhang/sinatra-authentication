@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{sinatra-authentication}
-  s.version = "0.4.2"
+  s.name = %q{sinatra-authentication-oran}
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Max Justus Spransy"]
-  s.date = %q{2010-12-14}
+  s.authors = ["OranZhang"]
+  s.date = %q{2012-12-8}
   s.description = %q{Simple authentication plugin for sinatra.}
-  s.email = %q{maxjustus@gmail.com}
+  s.email = %q{mr.q.zjc2006@gmail.com}
   s.extra_rdoc_files = [
     "TODO"
   ]
@@ -41,13 +41,13 @@ Gem::Specification.new do |s|
     "lib/models/sequel_adapter.rb",
     "lib/models/sequel_user.rb",
     "lib/models/tc_adapter.rb",
-    "lib/sinatra-authentication.rb",
+    "lib/sinatra-authentication-o.rb",
     "lib/sinatra-authentication/models.rb",
-    "lib/views/edit.haml",
-    "lib/views/index.haml",
-    "lib/views/login.haml",
-    "lib/views/show.haml",
-    "lib/views/signup.haml",
+    "lib/views/edit.slim",
+    "lib/views/index.slim",
+    "lib/views/login.slim",
+    "lib/views/show.slim",
+    "lib/views/signup.slim",
     "readme.markdown",
     "sinatra-authentication-0.3.2.gem",
     "sinatra-authentication.gemspec",
@@ -79,7 +79,7 @@ Gem::Specification.new do |s|
     "test/rufus_tokyo_test.rb",
     "test/sequel_test.rb"
   ]
-  s.homepage = %q{http://github.com/maxjustus/sinatra-authentication}
+  s.homepage = %q{https://github.com/oranzhang/sinatra-authentication}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Simple authentication plugin for sinatra.}
