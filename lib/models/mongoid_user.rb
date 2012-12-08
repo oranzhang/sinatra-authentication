@@ -2,6 +2,7 @@ class MongoidUser
   include Mongoid::Document
   include Mongoid::Timestamps
   field :email
+  field :name
   field :hashed_password
   field :salt
   field :permission_level, :type => Integer, :default => 1
@@ -10,9 +11,9 @@ class MongoidUser
   end
 
   # Validations
-  validates_uniqueness_of :email
+  validates_uniqueness_of :email ,:name
   validates_format_of :email, :with => /(\A(\s*)\Z)|(\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z)/i
-  validates_presence_of :password
+  validates_presence_of :name ,:email
   validates_confirmation_of :password
 
   #attr_protected :_id, :salt
